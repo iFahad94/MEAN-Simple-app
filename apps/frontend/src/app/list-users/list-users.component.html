@@ -1,0 +1,17 @@
+<div class="user-list">
+  <h2>User List</h2>
+  <ul>
+    <li *ngFor="let user of users">
+      <strong>Username:</strong> {{ user.username }}<br>
+      <strong>Email:</strong> {{ user.email }}<br>
+      <strong>Roles:</strong> {{ user.roles.join(', ') }}<br>
+      <strong>Created At:</strong> {{ user.createdAt | date:'medium' }}
+    </li>
+  </ul>
+</div>
+
+<div *ngIf="errorMessage" class="error-message">
+  <p>{{ errorMessage }}</p>
+</div>
+
+<button (click)="logout()">Logout</button>

@@ -1,0 +1,73 @@
+/* Container styling for centering the form */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Full viewport height */
+  background-color: #f4f4f9; /* Light background color */
+  text-align: center; /* Center text for all child elements */
+}
+
+/* Form styling */
+form {
+  background-color: #ffffff; /* White background for the form */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for the form */
+  max-width: 400px; /* Maximum width of the form */
+  width: 100%;
+}
+
+/* Label styling */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333; /* Darker text color for labels */
+}
+
+/* Input field styling */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd; /* Light border color */
+  border-radius: 4px;
+  margin-bottom: 16px;
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+/* Button styling */
+button[type="submit"] {
+  background-color: #007bff; /* Primary button color */
+  color: #ffffff; /* White text color */
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%; /* Full width button */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Link styling */
+a {
+  color: #007bff; /* Primary link color */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Paragraph styling for additional text */
+p {
+  text-align: center;
+  margin-top: 10px;
+  color: #555; /* Slightly lighter color for the paragraph */
+}
